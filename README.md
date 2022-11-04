@@ -1,4 +1,4 @@
-#UTS Microbiota
+# UTS Microbiota
 ***
 Microbiota residing on the urban transit systems (UTSs) can be shared by travelers, and they have niche-specific assemblage. However, it remains unclear how the assembly processes are influenced by city characteristics, rendering city-specific and microbial-aware urban planning challenging.
 
@@ -6,9 +6,9 @@ In this study, we analyzed 3359 UTS microbial samples collected from 16 cities a
 
 The assigned taxonomic table and metadata could be downloaded from [MetaSUB](https://pngb.io/metasub-2021). We present the results and code of our analyses to [GitHub](https://github.com/XiongGZ/UTS_Microbiota) to reproduce the analysis or learn from it.
 
-##Directory and file Illustration
+## Directory and file Illustration
 ***
-###01. Assemblage
+### 01. Assemblage
 Explore the assemblage of UTS microbiota.
 
 **tNST.R**
@@ -17,7 +17,7 @@ Explore the assemblage of UTS microbiota.
 **pairwise.csv**
 - The output of tNST.R, includes stochasticity ratio (ST), normalized stochasticity ratio (NST), modified stochasticity ratio (MST), standard effect size (SES), and modified Raup-Crick index (RC)
 
-###02.Source_tracking
+### 02.Source_tracking
 Explore the association within the microbial communities on different New York City UTS surfaces.
 
 **source_tracking.R**
@@ -29,7 +29,7 @@ Explore the association within the microbial communities on different New York C
 **result**
 - The result of NYC UTS surface microbiota source track using FEAST. 
 
-###03.Specificity_quantify
+### 03.Specificity_quantify
 Quantify the ability of UTS microbes that have top 100 square deviations in discriminating between cities designed as city specificity.
 
 **vars_top100.csv**
@@ -44,7 +44,7 @@ Quantify the ability of UTS microbes that have top 100 square deviations in disc
 **result**
 - The result of quantifying UTS microbe city specificity
 
-###04.Characteristic_predict
+### 04.Characteristic_predict
 Confirm the association between the UTS microbes and city characteristics based on which city characteristics can be accurately predicted by using city-specific microbes.
 
 **`predict.py`**
@@ -59,7 +59,7 @@ Confirm the association between the UTS microbes and city characteristics based 
 **result**
 - The result of predicting city characteristics using random forest models using UTS microbes as features.
 
-###TransferRandomForest
+### TransferRandomForest
 Implementation of the SER-STRUCT algorithm to perform transfer learning with random forest. The origin package is [TransferRandomForest](https://github.com/Luke3D/TransferRandomForest). We add the evaluation function to this package.
 
 The algorithm is presented in this paper: 
